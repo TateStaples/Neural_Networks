@@ -32,3 +32,6 @@ net = NeuralNetwork(layers, activations)
 print(type(train_images[0]))
 net.train_network(train_images, train_labels, 0.1, 1)
 net.evaluate(test_images,test_labels)
+
+if __name__ == '__main__':
+    pass

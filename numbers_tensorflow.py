@@ -20,3 +20,5 @@ print(np.argmax(predictions[image_number]))
 plt.imshow(test_images[image_number].reshape(28, 28), cmap='gray')
 plt.show()
 
+if __name__ == '__main__':
+    pass

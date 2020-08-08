@@ -94,7 +94,7 @@ class NeuralNetwork:
             sum_error = 0
             for r, row in enumerate(train_data):  # for each datum
                 if r % (len(train_data)//10) == 0:
-                    print("%10 percent through")
+                    print(f"%{len(train_data)//10}0 percent through")
                 outputs = self.forward_propagate(row)  # make a prediction
                 expected = train_results[r]  # this is what you should have gotten
                 sum_error += sum([(expected[i] - outputs[i]) ** 2 for i in range(len(expected))])
